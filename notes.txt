@@ -1,0 +1,168 @@
+Aprendizaje Automático
+El aprendizaje automático está transformando la forma en que las computadoras resuelven problemas — no siguiendo instrucciones explícitas, sino aprendiendo patrones a partir de datos. Imagina enseñar a una computadora a reconocer correos electrónicos no deseados, predecir precios de viviendas o recomendar tu próxima canción favorita — todo mostrando ejemplos en lugar de escribir reglas detalladas.
+
+Qué es el Aprendizaje Automático
+El aprendizaje automático es un enfoque poderoso para construir sistemas inteligentes, pero ¿qué significa exactamente? Exploremos cómo se diferencia de la programación tradicional y aprendamos los términos clave que forman la base del aprendizaje automático.
+
+Programación Tradicional vs Aprendizaje Automático
+En la programación tradicional, escribes reglas e instrucciones explícitas para que la computadora las siga. Por ejemplo, podrías escribir un programa que diga:
+
+"Si el correo electrónico contiene la palabra 'gratis', márcalo como spam."
+"Si la temperatura está por debajo de 0°C, muestra 'Congelando'."
+La computadora aplica estas reglas fijas a los datos para producir un resultado.
+
+En el aprendizaje automático, en lugar de escribir reglas, proporcionas a la computadora muchos ejemplos de datos y las respuestas correctas. La máquina entonces aprende las reglas por sí misma encontrando patrones en los datos. Por ejemplo, le muestras miles de correos electrónicos etiquetados como "spam" o "no spam", y ella descubre cómo clasificar nuevos correos.
+
+Seis Términos Fundamentales del Aprendizaje Automático
+Entender estos términos te ayudará a navegar el mundo del aprendizaje automático:
+
+Conjunto de datos: Una colección de ejemplos usados para entrenar o evaluar un modelo.
+
+Ejemplo: Una tabla de 10,000 correos electrónicos etiquetados como spam o no spam.
+Observación: Un solo ejemplo o fila en el conjunto de datos.
+
+Ejemplo: Un correo electrónico del conjunto de datos.
+Característica: Una variable de entrada que describe una observación.
+
+Ejemplo: Conteo de palabras, dominio del remitente o longitud de la línea de asunto de un correo.
+Etiqueta: La respuesta correcta para una observación de entrenamiento.
+
+Ejemplo: Si el correo es spam o no.
+Objetivo: La variable que el modelo intenta predecir.
+
+Ejemplo: Si un nuevo correo es spam.
+Predicción: La salida del modelo para una observación nueva y no vista.
+
+Ejemplo: "Este correo es spam con un 94% de confianza."
+
+Cómo Aprenden las Máquinas
+Los modelos de aprendizaje automático mejoran ajustándose repetidamente basándose en los datos que ven. Este proceso se llama bucle de entrenamiento. Exploremos cómo funciona este bucle paso a paso y por qué es esencial para construir modelos efectivos.
+
+Explicación del Bucle de Entrenamiento
+Imagina que comienzas con un modelo que tiene configuraciones aleatorias (llamadas parámetros o pesos). El objetivo es ajustar estos parámetros para que el modelo haga mejores predicciones.
+
+Para cada ejemplo en tus datos de entrenamiento (llamado una observación), el modelo sigue estos pasos:
+
+Ingresar las características: El modelo recibe las variables de entrada que describen la observación.
+Hacer una predicción: Usando sus parámetros actuales, el modelo predice una salida.
+Calcular el error: Compara la predicción con la etiqueta verdadera usando una función de pérdida. Esta función mide qué tan equivocada está la predicción.
+Calcular gradientes: Determina cómo cambiar los parámetros para reducir el error.
+Actualizar parámetros: Ajusta los parámetros ligeramente en la dirección que disminuye la pérdida, a menudo usando un método llamado descenso de gradiente.
+Repetir: Pasar a la siguiente observación y repetir el proceso, a menudo recorriendo todo el conjunto de datos varias veces (llamado épocas).
+
+El aprendizaje automático incluye múltiples paradigmas, cada uno adecuado para diferentes problemas.
+El aprendizaje supervisado usa datos etiquetados para predecir objetivos.
+El aprendizaje no supervisado encuentra patrones en datos no etiquetados.
+El aprendizaje auto-supervisado, por refuerzo y profundo son paradigmas avanzados con usos específicos.
+
+Modelos Preentrenados
+Imagina tener una herramienta poderosa ya construida y probada, lista para ayudarte a resolver problemas complejos sin empezar desde cero. Esto es exactamente lo que ofrecen los modelos preentrenados en el mundo del aprendizaje automático.
+
+¿Qué es un Modelo Preentrenado?
+Un modelo preentrenado es un modelo de aprendizaje automático que ya ha sido entrenado con un conjunto de datos grande. En lugar de pasar tiempo recolectando datos, escribiendo código de entrenamiento y esperando a que el modelo aprenda, puedes usar estos modelos listos para hacer predicciones de inmediato.
+
+¿Por qué Usar Modelos Preentrenados?
+Ahorra Tiempo y Recursos: Entrenar modelos grandes puede tomar días o semanas y requiere computadoras potentes. Los modelos preentrenados te permiten saltarte este paso.
+Aprovecha la Experiencia: Estos modelos suelen ser creados por expertos y entrenados con conjuntos de datos masivos, lo que los hace confiables y efectivos.
+Obtén Resultados Rápidos: Para tareas comunes como detección de spam, análisis de sentimiento o clasificación de imágenes, los modelos preentrenados ofrecen una solución rápida y práctica.
+¿Cuándo Usarlos?
+Usa modelos preentrenados cuando:
+
+Tu tarea es común y bien estudiada.
+Tienes datos limitados.
+Quieres una línea base rápida antes de personalizar más.
+A veces, entrenar desde cero es necesario si tu tarea es muy especializada o tus datos son únicos.
+
+El Flujo de Trabajo Encontrar-Evaluar-Usar
+Este curso te guiará a través de un proceso simple de tres pasos:
+
+Encontrar un modelo preentrenado que se ajuste a tu tarea.
+Evaluar si el modelo se adapta a tus necesidades revisando su rendimiento, licencia y datos de entrenamiento.
+Usar el modelo en tu código para hacer predicciones.
+
+Encontrar Modelos
+Cuando quieres añadir capacidades de aprendizaje automático a tu proyecto, el primer paso es encontrar un modelo preentrenado que se ajuste a tu tarea. Afortunadamente, existen muchos repositorios donde expertos comparten modelos entrenados con grandes conjuntos de datos, listos para que los uses.
+
+Principales Repositorios de Modelos
+Aquí están algunos de los lugares más populares para encontrar modelos preentrenados:
+
+Hugging Face Hub (huggingface.co/models)
+
+El repositorio comunitario más grande con más de 500,000 modelos.
+Cubre muchas tareas: procesamiento de lenguaje natural (PLN), visión por computadora, audio y más.
+Cada modelo incluye una tarjeta de modelo que describe sus detalles.
+
+Evaluación de un Modelo
+Cuando encuentras varios modelos preentrenados para tu tarea, ¿cómo eliges el mejor? Esta lección profundiza en los criterios de evaluación que te ayudan a escoger un modelo que se ajuste a tus necesidades, funcione bien y sea legalmente seguro de usar.
+
+1. Ajuste a la Tarea: Empareja el Modelo con tu Caso de Uso
+El factor más importante es si la tarea para la que está destinado el modelo coincide exactamente con tu aplicación. Por ejemplo:
+
+Un modelo de análisis de sentimientos entrenado con reseñas de películas puede no funcionar bien con notas médicas.
+Un clasificador de spam entrenado con datos de correo electrónico es mejor para filtrar correos que uno entrenado con texto de redes sociales.
+Siempre verifica la descripción de la tarea en la tarjeta del modelo para asegurar la alineación.
+
+2. Métricas de Referencia: ¿Qué tan Bien Funciona?
+Busca métricas como precisión, puntuación F1 o BLEU en conjuntos de datos de referencia relevantes. Estas puntuaciones indican qué tan bien funciona el modelo en pruebas estándar.
+
+Ejemplo: Un clasificador de spam con 97% de precisión en datos de correo electrónico es preferible a uno con 99% de precisión entrenado con texto de redes sociales si tu caso de uso es el filtrado de correos.
+
+3. Relevancia de los Datos de Entrenamiento: El Dominio Importa
+Revisa el dominio y estilo de los datos de entrenamiento:
+
+Los modelos entrenados con texto formal pueden tener dificultades con el lenguaje informal de redes sociales.
+Un modelo entrenado con comentarios de Instagram será más efectivo para la moderación en redes sociales que uno entrenado con artículos de noticias.
+4. Cumplimiento de Licencias: Conoce tus Límites Legales
+Las licencias dictan cómo puedes usar el modelo:
+
+Las licencias MIT y Apache 2.0 son permisivas y generalmente seguras para uso comercial.
+CC-BY-NC restringe el uso a proyectos no comerciales.
+Confirma siempre la licencia antes de integrar un modelo en tu producto.
+
+5. Tamaño del Modelo y Velocidad de Inferencia: Consideraciones para el Despliegue
+Los modelos grandes (por ejemplo, variantes de GPT-3) ofrecen alta precisión pero requieren recursos significativos, lo que los hace inadecuados para dispositivos móviles o de borde.
+
+Los modelos más pequeños sacrifican algo de precisión por una inferencia más rápida y menor uso de memoria.
+
+6. Soporte Comunitario: Confiabilidad y Mantenimiento
+Los modelos populares con muchas descargas y mantenimiento activo tienen menos probabilidades de tener errores ocultos.
+
+Verifica:
+
+Número de descargas o estrellas
+Actualizaciones recientes
+Documentación detallada
+7. Leer una Tarjeta de Modelo: Tu Guía de Evaluación
+La tarjeta del modelo es el documento esencial que describe el modelo. Debe incluir:
+
+Uso previsto y aplicaciones fuera de alcance
+Detalles de los datos de entrenamiento
+Métricas de evaluación
+Consideraciones de sesgo y equidad
+
+Usando un Modelo
+Imagina tener un modelo de aprendizaje automático poderoso al alcance de tu mano, listo para hacer predicciones sin necesidad de entrenarlo tú mismo. Esto es exactamente lo que significa usar un modelo preentrenado: aprovechas un modelo ya entrenado con grandes conjuntos de datos para resolver tu problema de manera eficiente.
+
+El Flujo de Trabajo en Tres Pasos: Cargar, Preparar Entrada, Ejecutar Inferencia
+Usar un modelo preentrenado en tu código sigue un patrón simple y consistente:
+
+Cargar el Modelo
+Trae el modelo a la memoria de tu programa. Esto puede significar cargarlo desde un archivo, una biblioteca o descargarlo desde un repositorio en línea.
+
+Preparar la Entrada
+
+Transforma tus datos en bruto al formato exacto que el modelo espera. Esto puede implicar normalizar números, tokenizar texto, redimensionar imágenes u otros pasos de preprocesamiento.
+
+Ejecutar Inferencia
+
+Pasa la entrada preparada al modelo para obtener predicciones. Este paso se llama inferencia — el modelo usa sus parámetros aprendidos para hacer predicciones sin modificarlos.
+
+¿Qué es la Inferencia?
+La inferencia es simplemente el proceso de usar un modelo entrenado para hacer predicciones sobre datos nuevos. A diferencia del entrenamiento, la inferencia no actualiza los parámetros del modelo; solo los lee para generar salidas.
+
+Piensa en el modelo como una función: le das una entrada y devuelve una salida basada en lo que aprendió durante el entrenamiento.
+
+Por Qué Esto Importa
+Este patrón cargar-preparar-predecir es la base de la ingeniería práctica de aprendizaje automático. Cada función potenciada por ML que uses — desde filtros de spam hasta clasificadores de imágenes — comienza con este flujo de trabajo.
+
+Al dominar estos pasos, puedes integrar rápidamente modelos poderosos en tus proyectos, ahorrando tiempo y recursos.
